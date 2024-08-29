@@ -101,4 +101,15 @@ public class Vehicle {
     public String getFuelType() {
         return fuelType;
     }
+
+    /**
+     * toString method to print the info without Car method
+     * @return
+     */
+    @Override
+    public String toString() {
+        return "Number of wheels: " + numberOfWheels+" Color: " + color +
+                " Engine size: " + engineSize+ " FuelType; " + fuelType;
+
+    }
 }

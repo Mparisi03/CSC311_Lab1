@@ -12,14 +12,15 @@ public class Car extends Vehicle {
 
     public Car() {
         super();
+
     }
 
     /**
      * copy constructor(public)
      * @param brand
      */
-    public Car(String brand) {
-        super();
+    public Car(int numberOfWheels, String color, float engineSize, String fuelType,String brand) {
+        super(numberOfWheels, color, engineSize, fuelType);
         this.brand = brand;
     }
 
@@ -52,9 +53,9 @@ public class Car extends Vehicle {
      */
     public void displayInfo(){
         System.out.println("Brand: " + brand);
-        System.out.println("Number of wheels" + getNumberOfWheels());
+        System.out.println("Number of wheels " + getNumberOfWheels());
         System.out.println("Color: " + getColor());
-        System.out.println("Engine size" + getEngineSize());
+        System.out.println("Engine size " + getEngineSize());
         System.out.println("Fuel type " + getFuelType());
 
     }
